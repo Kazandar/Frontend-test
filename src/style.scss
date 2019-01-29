@@ -1,0 +1,133 @@
+.app {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.preloader-container{
+    margin: 0 0 auto 0;
+}
+
+.preloader {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: space-between;
+    padding: 1vh 3%;
+
+    .controlls-container{
+        flex-basis: 320px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    img{
+        max-height: 100px;
+    }
+
+    .search-form{
+
+        .search-btn{
+            border-color: #F1B14F;
+            color: #F1B14F;
+
+            &:hover{
+                color: white;
+                background-color: #F1B14F;
+            }
+        }
+    }
+
+    button{
+        color: #41474D;
+    }
+
+    button:disabled{
+        color: #61DAFB
+    }
+}
+
+.table{
+    margin: 0 0 auto 0;
+
+    tr{
+      background-color: #F8F9FA;
+      transition: background-color 0.3s linear;
+    }
+
+    tr:hover{
+        cursor: pointer;
+        background-color: #DBE1E7;
+    }
+
+    tr:hover th{
+        background-color: #F8F9FA;
+    }
+
+    .active-string{
+        background-color: #F1B14F;
+        transition: background-color 0.3s linear;
+    }
+
+    .active-string:hover{
+       background-color: #F1B14F;
+    }
+}
+
+.person-card{
+    min-width: 80%; 
+    align-items: center;
+    padding: 2vh 0;
+    border-radius: 0;
+
+    .address{
+       align-self: stretch;
+       display: flex;
+       justify-content: space-evenly;
+    }
+
+    b {
+        color: #F1B14F;
+    }
+}
+
+.pagination {
+    margin: 0;
+    border-radius: 0;
+    background-color: #41474D;
+    padding: 2vh 0;
+    display: flex;
+    justify-content: center;
+
+    .break{
+        color: #F8F9FA;
+    }
+
+    .page-link{
+        color: #F8F9FA;
+        background-color: #41474D;
+    }
+
+    .page-item.active .page-link{
+        border-color: #F1B14F;
+        background-color: #F1B14F;
+    }
+
+}
+
+.empty{
+    min-height: 67.1vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5em;
+    font-weight: bold;
+}
